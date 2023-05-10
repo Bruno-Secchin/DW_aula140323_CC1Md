@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Alunos</title>
+</head>
+
+<body>
+
+    <h1>Tabela de Alunos</h1>
+    <table>
+        <thead>
+            <th>Matricula</th>
+            <th>Nome</th>
+            <th>Faltas</th>
+            <th>Nota B1</th>
+            <th>Nota B2</th>
+            <th>Média</th>
+            <th>Nota PR</th>
+            <th>Média Final</th>
+            <th>Situação</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" class="in" id="matricula" placeholder="Matricula" value=""></td>
+                <td><input type="text" class="in" id="nome" placeholder="Nome" value=""></td>
+                <td><input type="number" class="in" id="faltas" placeholder="Faltas" value=""></td>
+                <td><input type="number" class="in" id="b1" placeholder="Nota B1" value=""></td>
+                <td><input type="number" class="in" id="b2" placeholder="Nota B2" value=""></td>
+                <td>?</td>
+                <td><input type="number" class="in" id="pr" placeholder="Nota PR" value=""></td>
+                <td>?</td>
+                <td>?</td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="InserirAluno()">Inserir Aluno</button>
+    <script src="index.js"></script>
+</body>
+
+</html>
