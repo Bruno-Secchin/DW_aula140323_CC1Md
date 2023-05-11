@@ -21,7 +21,7 @@ function InserirAluno() {
     var b1 = parseFloat(i3.value);
     var b2 = parseFloat(i4.value);
     var media = parseFloat((b1 + b2) / 2);
-    var pr = '-'
+    var pr = '-';
     var mf = '-';
     var sit;
 
@@ -39,12 +39,12 @@ function InserirAluno() {
                 sit = 'APROVADO';
             }
             else {
-                sit = 'REPROVADO'
+                sit = 'REPROVADO';
             }
         }
     }
 
-    var tabela = document.querySelector("body > table")
+    var tabela = document.querySelector("body > table");
 
     var linha = tabela.insertRow(-1);
 
