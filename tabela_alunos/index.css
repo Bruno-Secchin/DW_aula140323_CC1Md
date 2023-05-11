@@ -34,11 +34,36 @@ table * {
     height: 40px;
 }
 
+div#f {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
 input {
     margin: 0;
     width: 90%;
     height: 80%;
     text-indent: 5px;
+}
+
+input#faltas {
+    margin-right: 3px;
+}
+
+div#f input {
+    width: 45%;
+}
+
+.short {
+    width: 85px;
+}
+
+.long {
+    width: 180px;
 }
 
 ::placeholder {

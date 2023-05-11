@@ -14,10 +14,12 @@ function InserirAluno() {
     var i3 = document.querySelector("#b1");
     var i4 = document.querySelector("#b2");
     var i5 = document.querySelector("#pr");
+    var i6 = document.querySelector('#aulas');
 
     var matricula = i0.value;
     var nome = i1.value;
-    var faltas = i2.value;
+    var faltas = parseInt(i2.value);
+    var aulas = parseInt(i6.value);
     var b1 = parseFloat(i3.value);
     var b2 = parseFloat(i4.value);
     var media = parseFloat((b1 + b2) / 2);
@@ -25,7 +27,9 @@ function InserirAluno() {
     var mf = '-';
     var sit;
 
-    if (faltas > 20) {
+    faltas = (faltas / aulas) * 100;
+
+    if (faltas > 25) {
         sit = 'REPROVADO';
     }
     else {
@@ -45,12 +49,17 @@ function InserirAluno() {
     }
 
     var tabela = document.querySelector("body > table");
-
     var linha = tabela.insertRow(-1);
+    var celulas = linha.insertCell(i);
+    celulas.className = 'short';
+    var celulal = linha.insertCell(i);
+    celulal.className = 'long';
+
+    for (i = 0; i <);
 
     linha.insertCell(0).innerText = matricula;
     linha.insertCell(1).innerText = nome;
-    linha.insertCell(2).innerText = faltas;
+    linha.insertCell(2).innerText = faltas + '%';
     linha.insertCell(3).innerText = b1;
     linha.insertCell(4).innerText = b2;
     linha.insertCell(5).innerText = media;
