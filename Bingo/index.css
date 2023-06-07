@@ -76,7 +76,7 @@ main {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .div {
@@ -128,7 +128,7 @@ td {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    width: 180px;
+    width: 170px;
     height: 240px;
     margin-bottom: 20px;
     margin-right: 20px;
